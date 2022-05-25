@@ -5,20 +5,23 @@
  */
 package br.com.fullstackoverflow.kafkaschemaregistryexample.entity;
 
+import org.apache.avro.Schema;
 import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
+import org.apache.avro.specific.SpecificRecord;
+import org.apache.avro.specific.SpecificRecordBase;
 import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
 import org.apache.avro.message.BinaryMessageDecoder;
 import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
-public class PessoaDTO extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
+public class PessoaDTO extends SpecificRecordBase implements SpecificRecord {
   private static final long serialVersionUID = 7885625894551015737L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PessoaDTO\",\"namespace\":\"br.com.fullstackoverflow.kafkaschemaregistryexample.entity\",\"fields\":[{\"name\":\"nome\",\"type\":\"string\"},{\"name\":\"sobrenome\",\"type\":\"string\"}]}");
-  public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
+  public static final Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"PessoaDTO\",\"namespace\":\"br.com.fullstackoverflow.kafkaschemaregistryexample.entity\",\"fields\":[{\"name\":\"nome\",\"type\":\"string\"},{\"name\":\"sobrenome\",\"type\":\"string\"}]}");
+  public static Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
 
