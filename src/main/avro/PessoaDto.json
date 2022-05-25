@@ -1,9 +1,9 @@
 {
   "type": "record",
-  "name": "LongList",
-  "aliases": ["LinkedLongs"],
+  "name": "PessoaDTO",
+  "namespace": "br.com.fullstackoverflow.kafkaschemaregistryexample.entity",
   "fields" : [
-    {"name": "value", "type": "long"},
-    {"name": "next", "type": ["null", "LongList"]}
+    {"name": "nome", "type": "string"},
+    {"name": "sobrenome", "type": "string"}
   ]
 }
