@@ -13,6 +13,7 @@ class KafkaSchemaRegistryExampleApplication(
 ): ApplicationRunner {
 	override fun run(args: ApplicationArguments?) {
 		val pessoa = Pessoa("José", "Antunes")
+//		Thread.sleep(5000)
 		pessoaProducerImpl.persist("12345", pessoa)
 	}
 }
